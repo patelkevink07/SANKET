@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 import { Account, Post, Topic, TrendSnapshot } from '../types';
 import { TIME_SERIES_SENTIMENT } from '../data/mockData';
+import { SanketLogo } from './SanketLogo';
 
 interface CommandDashboardProps {
   posts: Post[];
@@ -77,9 +78,12 @@ export const CommandDashboard: React.FC<CommandDashboardProps> = ({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-mono text-xs font-semibold text-teal-400">FUSED INTELLIGENCE ENGINE</span>
+              <span className="font-mono text-xs font-semibold text-teal-400">SANKET FUSED INTELLIGENCE ENGINE</span>
               <span className="rounded-full bg-slate-800 px-2 py-0.5 text-[10px] font-mono text-slate-300">
                 4 Signals Co-Mapped
+              </span>
+              <span className="hidden sm:inline-flex rounded-full bg-slate-800/80 border border-slate-700 px-2 py-0.5 text-[10px] font-mono text-amber-400">
+                DECODE • ANALYZE • ANTICIPATE
               </span>
               {isBotFilterActive && (
                 <span className="rounded-full border border-amber-500/30 bg-amber-950/50 px-2 py-0.5 text-[10px] font-medium text-amber-300">
@@ -88,7 +92,7 @@ export const CommandDashboard: React.FC<CommandDashboardProps> = ({
               )}
             </div>
             <p className="text-xs text-slate-400 sm:text-sm">
-              Single-source cross-vector correlation of Sentiment, Demographics, Trends, and Link Topology across 6 social platforms.
+              Social Analytics & Network Knowledge Extraction Technology correlating Sentiment, Demographics, Trends, and Link Topology across 6 social platforms.
             </p>
           </div>
         </div>
@@ -381,7 +385,7 @@ export const CommandDashboard: React.FC<CommandDashboardProps> = ({
           </div>
 
           <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
-            <span className="text-xs text-slate-400">NTRO Surveillance Classification: TIER-1 MONITORING</span>
+            <span className="text-xs text-slate-400">SANKET // NTRO Surveillance Classification: TIER-1 STRATEGIC MONITORING</span>
             <button
               onClick={() => onSelectTab('timeline')}
               className="text-xs font-medium text-indigo-400 hover:text-indigo-300"

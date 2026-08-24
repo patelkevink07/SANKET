@@ -14,6 +14,7 @@ import {
   RefreshCw,
 } from 'lucide-react';
 import { DemographicProfile, SentimentScore } from '../types';
+import { SanketLogo } from './SanketLogo';
 
 interface LiveAiModalProps {
   isOpen: boolean;
@@ -142,11 +143,11 @@ export const LiveAiModal: React.FC<LiveAiModalProps> = ({ isOpen, onClose }) => 
       <div className="w-full max-w-3xl rounded-xl border border-slate-800 bg-slate-900 p-5 sm:p-6 shadow-2xl my-8">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-          <div className="flex items-center gap-2">
-            <Sparkles className="h-5 w-5 text-teal-400" />
+          <div className="flex items-center gap-3">
+            <SanketLogo size="sm" showSubtitle={false} />
             <div>
               <h3 className="text-base font-semibold text-slate-100">
-                Live AI Social Media Post Inference (Gemini 2.5 Flash)
+                SANKET Real-Time AI Inference Engine (Gemini 2.5 Flash)
               </h3>
               <p className="text-xs text-slate-400">
                 Simulate real-time emotion extraction, Hinglish sarcasm disambiguation, bot profiling & demographics.

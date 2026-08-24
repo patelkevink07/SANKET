@@ -1,6 +1,7 @@
 import React from 'react';
-import { Shield, Radio, Sparkles, Filter, Search, Bot, Clock, AlertTriangle, Layers } from 'lucide-react';
+import { Shield, Radio, Sparkles, Filter, Search, Bot, Clock, AlertTriangle, Layers, FileText } from 'lucide-react';
 import { FilterState, PlatformType, PrimarySentiment } from '../types';
+import { SanketLogo } from './SanketLogo';
 
 interface HeaderProps {
   filters: FilterState;
@@ -58,23 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/95 backdrop-blur-md">
       {/* Top Bar */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5 sm:px-6">
-        <div className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-teal-500/30 bg-teal-950/50 text-teal-400 shadow-sm shadow-teal-500/10">
-            <Shield className="h-5 w-5" />
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="font-mono text-xs font-semibold tracking-wider text-teal-400">NTRO // SIH-26152</span>
-              <span className="inline-flex items-center gap-1 rounded-full border border-emerald-500/30 bg-emerald-950/50 px-2 py-0.5 text-[10px] font-medium text-emerald-400">
-                <Radio className="h-2.5 w-2.5 animate-pulse text-emerald-400" />
-                STREAM ACTIVE
-              </span>
-            </div>
-            <h1 className="text-sm font-semibold text-slate-100 sm:text-base">
-              Social Media Analytics & Audience Intelligence Framework
-            </h1>
-          </div>
-        </div>
+        <SanketLogo size="md" />
 
         {/* Action Controls */}
         <div className="flex items-center gap-2 sm:gap-3">
