@@ -1,0 +1,6 @@
+{
+  "name": "Social Media Intelligence Framework",
+  "description": "AI-driven analytics framework for SIH 2026 (NTRO) fusing multi-platform ingestion, nuanced sentiment inference, demographic profiling, trend prediction, and network topology analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
